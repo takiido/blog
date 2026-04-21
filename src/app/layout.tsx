@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
+import localFont from "next/font/local";
+import Header from "../components/layout/header/Header";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const vcrOsdMono = localFont({
+  src: [
+    { path: '../../public/fonts/VCR_OSD_MONO_1.001.ttf', weight: '400', style: 'normal' },
+  ],
+  variable: '--font-vcr-osd-mono',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const departuremono = localFont({
+  src: [
+    { path: '../../public/fonts/DepartureMono.otf', weight: '400', style: 'normal' },
+  ],
+  variable: '--font-departure-mono',
 });
 
 export const metadata: Metadata = {
@@ -23,8 +29,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${vcrOsdMono.variable} ${departuremono.variable}`}>
+      <body>
+        <Header/>
+        <Image 
+          src="/eyes.gif" 
+          alt="Loading animation" 
+          width={300} 
+          height={210} 
+        />
+        {children}
+      </body>
     </html>
   );
 }

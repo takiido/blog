@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  transpilePackages: ["git-mdx-loader"],
+  cacheComponents: true,
 };
 
 export default nextConfig;

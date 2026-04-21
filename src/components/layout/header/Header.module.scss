@@ -1,0 +1,20 @@
+.header {
+  height: 55px;
+  width: 100%;
+  font-family: var(--font-vcr-osd-mono);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+}
+
+.header_link {
+  line-height: 0.77;
+
+  &__active {
+    color: #ffffff;
+    line-height: 0.77;
+    transform: scaleY(5);
+    transform-origin: bottom;
+  }
+}
