@@ -1,12 +1,12 @@
 import styles from "./page.module.css";
+import PersonalLinks from "@/components/personalLinks/PersonalLinks";
 
 export default function Home() {
   return (
     <main className="container">
       <div className={styles.home}>
-
         <p className={styles.home_text}>
-          my name is alex.
+          My name is Alex.
           <br />
           i began as a frontend developer working mainly with react.
           <br />
@@ -14,6 +14,11 @@ export default function Home() {
           <br />
           in my free time i like to work with c++ and recently i discovered rust.
         </p>
+      </div>
+      <hr className={styles.hr} />
+      <div className={styles.home}>
+        <p>Lorem ipsum</p>
+        <PersonalLinks />
       </div>
       <hr className={styles.hr} />
       <ul className={styles.lovehate}>

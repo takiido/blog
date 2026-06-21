@@ -8,6 +8,8 @@
 .home_text {
   text-align: center;
   line-height: 1.9;
+  font-size: 1.25em;
+  font-family: var(--font-ivy-presto);
 }
 
 .hr {
@@ -22,4 +24,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 4em;
+
+  font-family: var(--font-ivy-presto);
+}
+
+.gh {
+  color: orange;
+}
+
+.spotify {
+  color: green;
+}
+
+.x {
+  color: red;
 }

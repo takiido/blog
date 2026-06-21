@@ -9,10 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "git-mdx-loader": "file:../git-mdx-loader",
+    "@phosphor-icons/react": "^2.1.10",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@types/three": "^0.184.1",
+    "git-mdx-loader": "^0.4.2",
+    "leva": "^0.10.1",
+    "motion": "^12.40.0",
     "next": "16.2.2",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "three": "^0.184.0",
+    "three-stdlib": "^2.36.1"
   },
   "devDependencies": {
     "@types/node": "^20",
